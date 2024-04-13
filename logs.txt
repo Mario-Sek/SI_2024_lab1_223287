@@ -1,0 +1,29 @@
+commit 4f19ec65cc63702f4c89c16259ef203cce0b9201 (HEAD -> master, origin/master, origin/bug2, bug2)
+Author: Weasel <writingweasel1221@gmail.com>
+Date:   Sat Apr 13 14:00:33 2024 +0200
+
+    Call method makeBigStringFrom in main class
+
+commit 89f28d405a5efab06c825bea003a40545e6e0916
+Author: Weasel <writingweasel1221@gmail.com>
+Date:   Sat Apr 13 13:48:25 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit b4631120e78ca43e3d5dee2b79ade822f2c37552
+Author: Weasel <writingweasel1221@gmail.com>
+Date:   Sat Apr 13 13:36:16 2024 +0200
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit 3d35d50000f61fd489e8ea54f57e42257a9a7cc7
+Author: Weasel <writingweasel1221@gmail.com>
+Date:   Sat Apr 13 13:13:52 2024 +0200
+
+    Add starter code
+
+commit 8f9ad056c8aeb5c192ace1cc6f19db0575363fb5
+Author: Weasel <writingweasel1221@gmail.com>
+Date:   Sat Apr 13 13:10:53 2024 +0200
+
+    Initial commit

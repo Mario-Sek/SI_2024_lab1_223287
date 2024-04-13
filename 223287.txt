@@ -1,0 +1,67 @@
+4. vlagame vo folderot preku git i pravime git init
+5. git remote add origin https://github.com/Mario-Sek/SI_2024_lab1_223287.git
+6. nano README.md, ja popolnuvame, git add README.md, git commit -m "Initial commit"
+7. copy paste vo folder na fajlovite, git add . , git commit -m "Add starter code"
+8. git push --all origin
+9. git checkout master, git branch bug1, git branch bug2
+10. git checkout bug1
+11. menuvame java file vo !=, git add SILab1_1.java. , git commit -m "Fix wrong condition in filterOddLengthStrings"
+12. git checkout bug2
+13. menuvame java file vo >=, git add ., git monnit -m "Fix wrong condition in makeBigStringFrom"
+14. git checkout bug1
+15. dodavame linija, git add . , git commit -m "Call method filterOddLengthStrings in main class"
+16. git checkout bug2
+17. dodavame linija, git add . , git commit -m "Call method makeBigStringFrom in main class"
+18. git push --all origin
+19. git checkout master
+20. git merge bug1
+SILab1Main.java | 1 +
+ SILab1_1.java   | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+21. git push --all origin
+22. git checkout bug2
+23. git rebase master , se dobiva confict
+CONFLICT (content): Merge conflict in SILab1Main.java
+error: could not apply 4603271... Call method makeBigStringFrom in main class
+
+(mora posledniot commit na master da se izbrishe)
+
+git rebase --abort
+git checkout master
+git reset --hard b4631120e78ca43e3d5dee2b79ade822f2c37552 (se vrakjame commit nazad za da se izbegne konfliktot)
+git checkout bug2
+git rebase master
+
+Successfully rebased and updated refs/heads/bug2.
+
+24. git checkout master
+
+25.  git merge bug2
+Updating b463112..4f19ec6
+Fast-forward
+ SILab1Main.java | 1 +
+ SILab1_2.java   | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+26. git push -all origin
+
+ ! [rejected]        bug2 -> bug2 (non-fast-forward)
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Mario-Sek/SI_2024_lab1_223287.git'
+
+27. git push --force origin bug2 
+git push --force origin master (mora force zaradi posledniot ibrishan commit od preeska)
+
+28. 
+nano logs.txt
+nano 223287.txt
+git add .
+git commit -m "Final commit"
+
+29. git push -all origin
+
+
+
+
+
